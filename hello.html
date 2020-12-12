@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+	<script>
+		let loginpwdstatus=false;
+function changepwdview(){
+let getlogininput=documnent.getElementById("loginpwdchange");
+
+
+
+ if(loginpwdstatus ===false){
+
+getlogininput.setattribute("type","text");
+loginpwdstatus=true;
+}
+else if (loginpwdstatus===true){
+
+getlogininput.setattribute("type","password");
+
+loginpwdstatus=false;
+}
+}
+
+swal("sdkjhsdhs");
+
+
+</script>
+
+
+	<label>password </label>
+<input type="password" name="pass" placeholder="password"  id="loginpwdview">
+
+<button onclick="changepwdview()">show/hide</button>
+
+
+	</body>
+	</html>
